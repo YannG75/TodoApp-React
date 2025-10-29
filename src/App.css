@@ -7,7 +7,7 @@
     background-color: #f9f9f9;
     color: #242424;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,6 +75,11 @@ input[type="checkbox"]:checked:before {
 .del {
     background-color: lightpink;
     color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.edit {
     border: none;
     border-radius: 5px;
     padding: 5px;
