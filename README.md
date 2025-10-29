@@ -1,4 +1,7 @@
 # 📝 Todo App - React
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 Une application de gestion de tâches moderne et interactive, construite avec React et @dnd-kit pour le drag & drop.
 
