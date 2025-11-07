@@ -104,7 +104,7 @@ input[type="checkbox"]:checked:before {
 @media (max-width: 600px) {
 
     .todo {
-        width: 70vw;
+        width: 80vw;
     }
 
 
