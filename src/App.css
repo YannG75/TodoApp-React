@@ -32,6 +32,7 @@ input[type="text"] {
     border: none;
     margin-right: 20px;
     border-radius: 5px;
+    color: #242424;
     background-color: #f6f6f6;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -39,8 +40,9 @@ input[type="text"] {
 input[type="checkbox"] {
     appearance: none;
     width: 20px;
+    color: #747bff;
     height: 20px;
-    border: 2px solid currentcolor;
+    border: 2px solid #747bff;
     border-radius: 5px;
     display: grid;
     place-content: center;
@@ -58,6 +60,11 @@ input[type="checkbox"]::before  {
 
 input[type="checkbox"]:checked:before {
     transform: scale(1);
+}
+
+.filter button, .actions button {
+    color: #242424;
+    background-color: #f6f6f6;
 }
 
 .todo {
@@ -98,6 +105,11 @@ input[type="checkbox"]:checked:before {
 
     .todo {
         width: 70vw;
+    }
+
+
+    .actions {
+        width: 80%;
     }
 
 }

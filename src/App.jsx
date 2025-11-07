@@ -110,7 +110,7 @@ function App() {
                     setInputValue={setInputValue}
                 />
                 <section>
-                    <article
+                    <article className="filter"
                         style={{display: 'flex', gap: '10px', alignItems: 'center', justifyContent: 'space-around'}}>
                         <button style={{backgroundColor: filter === 'all' ? 'lavender' : '#f9f9f9'}}
                                 onClick={() => setFilter('all')}>Toutes
@@ -123,14 +123,15 @@ function App() {
                         </button>
                     </article>
                 </section>
-                <article style={{display: 'flex', gap: '10px', alignItems: 'center', justifyContent: 'space-around'}}>
+                <article className="actions" style={{display: 'flex', gap: '10px', alignItems: 'center', justifyContent: 'space-around'}}>
                     {todos.length !== 0 && <button
+                        style={{color: '#242424'}}
                         onClick={toggleAll}>
                         {todos.every(t => t.isCompleted) ? "tout Décocher" : "tout cocher"}
                     </button>
                     }
                     {todos.some(todo => todo.isCompleted) &&
-                        <button onClick={handleClearCompleted}>Supprimer les tâches complétées</button>}
+                        <button style={{color: '#242424'}} onClick={handleClearCompleted}>Supprimer les tâches complétées</button>}
                 </article>
                 <DndContext
                 collisionDetection={closestCenter}
