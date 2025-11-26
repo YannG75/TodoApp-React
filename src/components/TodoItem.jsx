@@ -43,6 +43,7 @@ function TodoItem({todo, toggleComplete, handleDelete, handleEdit}) {
             {...attributes}
             {...listeners}
         >
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="#747bff" d="M9 3h2v2H9zm4 0h2v2h-2zM9 7h2v2H9zm4 0h2v2h-2zm-4 4h2v2H9zm4 0h2v2h-2zm-4 4h2v2H9zm4 0h2v2h-2zm-4 4h2v2H9zm4 0h2v2h-2z" /></svg>
             <input type="checkbox" checked={todo.isCompleted} onChange={() => toggleComplete(todo.id)}/>
             {
                 canEdit ? (
