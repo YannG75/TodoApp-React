@@ -55,6 +55,10 @@ button:hover {
     background-color: lavender!important;
 }
 
+button:hover .add {
+    color: #1a1a1a;
+}
+
 button:focus,
 button:focus-visible {
     outline: none;

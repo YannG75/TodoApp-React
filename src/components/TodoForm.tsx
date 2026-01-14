@@ -15,7 +15,7 @@ function TodoForm({ handleSubmit, inputValue, setInputValue }: TodoFormProps) {
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="Ajouter une tâche..."
       />
-      <button type="submit">Ajouter</button>
+      <button className={'add'} type="submit">Ajouter</button>
     </form>
   )
 }
