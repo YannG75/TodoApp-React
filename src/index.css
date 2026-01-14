@@ -55,7 +55,7 @@ button:hover {
     background-color: lavender!important;
 }
 
-button:hover .add {
+button:hover.add {
     color: #1a1a1a;
 }
 
